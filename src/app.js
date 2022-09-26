@@ -15,7 +15,7 @@ app.get('/ping', async (req,res) => {
 })
 
 app.get('/create', async (req, res) => {
-    const result = await pool.query('INSERT INTO users(nombre) VALUES ("Jhon")')
+    const result = await pool.query('INSERT INTO users(name) VALUES ("Jhon")')
     res.json(result)
 })
 
